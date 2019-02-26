@@ -16,14 +16,14 @@ function Sandwich(bread, ingredients, name) {
     console.log("Your " + this.name + " includes: " + this.ingredients.join(", ") + ". Yum!");
   }
 }
- 
+
 var pbj = new Sandwich("wheat", ["chunky peanut butter", "blackberry preserves"], "PB&Jam");
- 
+
 var salad = {
   ingredients: ["croutons", "romaine hearts", "steak", "parmesan", "caesar dressing"],
   name: "Steak Caesar"
 }
- 
+
 salad.describe = pbj.describe.bind(salad);
 function visitTable() {
   console.log("The server is visiting " + this.name + " at table number " + this.tableNumber);
